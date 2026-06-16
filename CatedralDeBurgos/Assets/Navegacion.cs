@@ -29,8 +29,8 @@ public class Navegacion : MonoBehaviour
                     transform.Rotate(Vector3.right, rotationY, Space.World);
                     transform.Rotate(Vector3.up, rotationX, Space.World);
                     
-                    if(transform.eulerAngles.x < angleMin) transform.eulerAngles = new Vector3(angleMin, transform.eulerAngles.y, transform.eulerAngles.x);
-                    if(transform.eulerAngles.x > angleMax) transform.eulerAngles = new Vector3(angleMax, transform.eulerAngles.y, transform.eulerAngles.x);
+                    if(transform.eulerAngles.x < angleMin) transform.eulerAngles = new Vector3(angleMax, transform.eulerAngles.y, transform.eulerAngles.x);
+                    if(transform.eulerAngles.x > angleMax) transform.eulerAngles = new Vector3(angleMin, transform.eulerAngles.y, transform.eulerAngles.x);
                 }
                 
                 
